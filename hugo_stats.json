@@ -1,0 +1,44 @@
+{
+  "htmlElements": {
+    "tags": [
+      "a",
+      "body",
+      "code",
+      "div",
+      "em",
+      "footer",
+      "h1",
+      "h2",
+      "h3",
+      "head",
+      "header",
+      "html",
+      "img",
+      "li",
+      "link",
+      "main",
+      "meta",
+      "nav",
+      "ol",
+      "p",
+      "script",
+      "strong",
+      "time",
+      "title",
+      "ul"
+    ],
+    "classes": [
+      "active",
+      "ancestor"
+    ],
+    "ids": [
+      "how-to-fix-it",
+      "how-your-project-is-working-now",
+      "introduction",
+      "summary",
+      "the-current-situation-and-potential-issues",
+      "the-errors-in-your-project",
+      "understanding-your-hugo--tailwind-css-project"
+    ]
+  }
+}
