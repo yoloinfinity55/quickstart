@@ -2,59 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home on My New Hugo Site</title>
-    <link>http://localhost:1313/quickstart/</link>
+    <link>https://yoloinfinity55.github.io/quickstart/</link>
     <description>Recent content in Home on My New Hugo Site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 Oct 2025 17:52:02 -0400</lastBuildDate>
-    <atom:link href="http://localhost:1313/quickstart/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>My Fourth Post</title>
-      <link>http://localhost:1313/quickstart/posts/my-fourth-post/</link>
-      <pubDate>Wed, 01 Oct 2025 17:52:02 -0400</pubDate>
-      <guid>http://localhost:1313/quickstart/posts/my-fourth-post/</guid>
-      <description>&lt;p&gt;After reviewing the project again, I understand the changes you&amp;rsquo;ve made and have a clearer picture of the setup. Here&amp;rsquo;s a revised explanation of your project and its current state.&lt;/p&gt;&#xA;&lt;h3 id=&#34;how-your-project-is-working-now&#34;&gt;How Your Project Is Working Now&lt;/h3&gt;&#xA;&lt;p&gt;You&amp;rsquo;ve correctly set up your Hugo project to use a pre-compiled Tailwind CSS file. Here&amp;rsquo;s the workflow:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;CSS Entry Point:&lt;/strong&gt; The file &lt;code&gt;assets/css/main.css&lt;/code&gt; is the main source for your site&amp;rsquo;s styles. This is where you would typically use &lt;code&gt;@tailwind&lt;/code&gt; directives to import Tailwind&amp;rsquo;s base, components, and utilities.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Hugo&amp;rsquo;s Asset Pipeline:&lt;/strong&gt; The template file &lt;code&gt;themes/quickstart/layouts/_partials/head/css.html&lt;/code&gt; tells Hugo how to handle your CSS. It uses &lt;code&gt;resources.Get &amp;quot;css/main.css&amp;quot;&lt;/code&gt; to find your main CSS file.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Processing:&lt;/strong&gt; Although your &lt;code&gt;hugo.toml&lt;/code&gt; is configured to look for PostCSS and Tailwind configuration files, the current setup doesn&amp;rsquo;t strictly require them to be present for the site to build. The &lt;code&gt;hugo&lt;/code&gt; command itself can process the Tailwind directives in &lt;code&gt;assets/css/main.css&lt;/code&gt; and generate the final CSS.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Output:&lt;/strong&gt; The processed CSS is then included in your site&amp;rsquo;s HTML. In a development environment, it&amp;rsquo;s linked directly. In a production build, it&amp;rsquo;s minified and fingerprinted for better performance.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;the-current-situation-and-potential-issues&#34;&gt;The Current Situation and Potential Issues&lt;/h3&gt;&#xA;&lt;p&gt;While your site is now building and the content is appearing, there are still some underlying issues that could cause problems:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>My Third Post</title>
-      <link>http://localhost:1313/quickstart/posts/my-third-post/</link>
-      <pubDate>Wed, 01 Oct 2025 16:40:02 -0400</pubDate>
-      <guid>http://localhost:1313/quickstart/posts/my-third-post/</guid>
-      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;This project is a static website built using Hugo and styled with Tailwind CSS.&lt;/p&gt;&#xA;&lt;p&gt;Here&amp;rsquo;s a breakdown for a new learner:&lt;/p&gt;&#xA;&lt;p&gt;Hugo:&lt;/p&gt;&#xA;&lt;p&gt;Hugo is a fast static site generator written in Go. It takes your content (written in Markdown, like content/posts/my-first-post.md) and templates (HTML files in layouts) and combines them to generate a complete, ready-to-deploy website (found in the public directory).&lt;/p&gt;&#xA;&lt;p&gt;Tailwind CSS:&lt;/p&gt;&#xA;&lt;p&gt;Tailwind CSS is a utility-first CSS framework. Instead of writing custom CSS for every element, you apply pre-defined utility classes directly in your HTML (e.g., class=&amp;ldquo;text-blue-500 font-bold&amp;rdquo;). Hugo&amp;rsquo;s build process, specifically Hugo Pipes, is used to process your main.css file, which imports Tailwind CSS and then purges unused styles to keep the final CSS file small.&lt;/p&gt;</description>
-    </item>
+    <lastBuildDate>Wed, 01 Oct 2025 15:55:02 -0400</lastBuildDate>
+    <atom:link href="https://yoloinfinity55.github.io/quickstart/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My Second Post</title>
-      <link>http://localhost:1313/quickstart/posts/my-second-post/</link>
+      <link>https://yoloinfinity55.github.io/quickstart/posts/my-second-post/</link>
       <pubDate>Wed, 01 Oct 2025 15:55:02 -0400</pubDate>
-      <guid>http://localhost:1313/quickstart/posts/my-second-post/</guid>
+      <guid>https://yoloinfinity55.github.io/quickstart/posts/my-second-post/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve investigated your Hugo and Tailwind CSS project and have identified the source of the errors. Here&amp;rsquo;s an explanation of the project and the issues I found.&lt;/p&gt;&#xA;&lt;h3 id=&#34;understanding-your-hugo--tailwind-css-project&#34;&gt;Understanding Your Hugo + Tailwind CSS Project&lt;/h3&gt;&#xA;&lt;p&gt;This project is a static website built with &lt;strong&gt;Hugo&lt;/strong&gt;, a very fast static site generator written in Go. It uses &lt;strong&gt;Tailwind CSS&lt;/strong&gt;, a utility-first CSS framework, for styling. Let&amp;rsquo;s break down the key parts of the project:&lt;/p&gt;</description>
     </item>
     <item>
-      <title>My First Post</title>
-      <link>http://localhost:1313/quickstart/posts/my-first-post/</link>
-      <pubDate>Wed, 01 Oct 2025 15:40:02 -0400</pubDate>
-      <guid>http://localhost:1313/quickstart/posts/my-first-post/</guid>
-      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;This is &lt;strong&gt;bold&lt;/strong&gt; text, and this is &lt;em&gt;emphasized&lt;/em&gt; text.&lt;/p&gt;&#xA;&lt;p&gt;Visit the &lt;a href=&#34;https://gohugo.io/&#34;&gt;Go! Go! Go! Hugo&lt;/a&gt; website!&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Post 3</title>
-      <link>http://localhost:1313/quickstart/posts/post-3/</link>
+      <link>https://yoloinfinity55.github.io/quickstart/posts/post-3/</link>
       <pubDate>Wed, 15 Mar 2023 11:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/quickstart/posts/post-3/</guid>
+      <guid>https://yoloinfinity55.github.io/quickstart/posts/post-3/</guid>
       <description>&lt;p&gt;Occaecat aliqua consequat laborum ut ex aute aliqua culpa quis irure esse magna dolore quis. Proident fugiat labore eu laboris officia Lorem enim. Ipsum occaecat cillum ut tempor id sint aliqua incididunt nisi incididunt reprehenderit. Voluptate ad minim sint est aute aliquip esse occaecat tempor officia qui sunt. Aute ex ipsum id ut in est velit est laborum incididunt. Aliqua qui id do esse sunt eiusmod id deserunt eu nostrud aute sit ipsum. Deserunt esse cillum Lorem non magna adipisicing mollit amet consequat.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Post 2</title>
-      <link>http://localhost:1313/quickstart/posts/post-2/</link>
+      <link>https://yoloinfinity55.github.io/quickstart/posts/post-2/</link>
       <pubDate>Wed, 15 Feb 2023 10:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/quickstart/posts/post-2/</guid>
+      <guid>https://yoloinfinity55.github.io/quickstart/posts/post-2/</guid>
       <description>&lt;p&gt;Anim eiusmod irure incididunt sint cupidatat. Incididunt irure irure irure nisi ipsum do ut quis fugiat consectetur proident cupidatat incididunt cillum. Dolore voluptate occaecat qui mollit laborum ullamco et. Ipsum laboris officia anim laboris culpa eiusmod ex magna ex cupidatat anim ipsum aute. Mollit aliquip occaecat qui sunt velit ut cupidatat reprehenderit enim sunt laborum. Velit veniam in officia nulla adipisicing ut duis officia.&lt;/p&gt;&#xA;&lt;p&gt;Exercitation voluptate irure in irure tempor mollit Lorem nostrud ad officia. Velit id fugiat occaecat do tempor. Sit officia Lorem aliquip eu deserunt consectetur. Aute proident deserunt in nulla aliquip dolore ipsum Lorem ut cupidatat consectetur sit sint laborum. Esse cupidatat sit sint sunt tempor exercitation deserunt. Labore dolor duis laborum est do nisi ut veniam dolor et nostrud nostrud.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Post 1</title>
-      <link>http://localhost:1313/quickstart/posts/post-1/</link>
+      <link>https://yoloinfinity55.github.io/quickstart/posts/post-1/</link>
       <pubDate>Sun, 15 Jan 2023 09:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/quickstart/posts/post-1/</guid>
+      <guid>https://yoloinfinity55.github.io/quickstart/posts/post-1/</guid>
       <description>&lt;p&gt;Tempor proident minim aliquip reprehenderit dolor et ad anim Lorem duis sint eiusmod. Labore ut ea duis dolor. Incididunt consectetur proident qui occaecat incididunt do nisi Lorem. Tempor do laborum elit laboris excepteur eiusmod do. Eiusmod nisi excepteur ut amet pariatur adipisicing Lorem.&lt;/p&gt;&#xA;&lt;p&gt;Occaecat nulla excepteur dolore excepteur duis eiusmod ullamco officia anim in voluptate ea occaecat officia. Cillum sint esse velit ea officia minim fugiat. Elit ea esse id aliquip pariatur cupidatat id duis minim incididunt ea ea. Anim ut duis sunt nisi. Culpa cillum sit voluptate voluptate eiusmod dolor. Enim nisi Lorem ipsum irure est excepteur voluptate eu in enim nisi. Nostrud ipsum Lorem anim sint labore consequat do.&lt;/p&gt;</description>
     </item>
   </channel>
