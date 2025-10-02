@@ -1,7 +1,24 @@
 {{ define "main" }}
-  {{ .Content }}
-  {{ range site.RegularPages }}
-    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-    {{ .Summary }}
+<div class="container mx-auto px-4 py-8">
+  {{ with .Content }}
+  <div class="prose prose-lg mb-12">
+    {{ . }}
+  </div>
   {{ end }}
+  
+  <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+    {{ range site.RegularPages }}
+    <article class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+      <h2 class="text-2xl font-bold mb-3">
+        <a href="{{ .RelPermalink }}" class="text-gray-900 hover:text-blue-600">
+          {{ .LinkTitle }}
+        </a>
+      </h2>
+      <div class="text-gray-700">
+        {{ .Summary }}
+      </div>
+    </article>
+    {{ end }}
+  </div>
+</div>
 {{ end }}
